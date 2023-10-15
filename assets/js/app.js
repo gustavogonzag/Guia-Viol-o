@@ -2,10 +2,17 @@ new Vue({
   el: "#app",
   data: {
     css: "",
+    optimized: false
   },
   methods: {
     handleClick() {
-      const token = localStorage.getItem("token");
+    const textBtn = this.$refs.textBtn;
+    const btnOtimizar = this.$refs.btnOtimizar;
+    textBtn.innerHTML = "Otimizando...";
+    btnOtimizar.disabled = true;
+    btnOtimizar.classList.add('disabled');
+    //   const token = localStorage.getItem("token");
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluY29sb3JoYXJtb255Iiwic3ViIjoiNjUyYWZkMTMwMDdiZmI2YTVmNWY5ZmZkIiwiaWF0IjoxNjk3MzIxNTMxLCJleHAiOjE2OTc0MDc5MzF9.Tfg83K3w-QEPzxd1ChYMpsj81qHpNAYgQRV1VTg5y7Q";
 
       if (!token) {
         // window.location.href = "/login";
@@ -27,7 +34,7 @@ new Vue({
           }
         }
         const obj = {
-          css: "olá",
+          css: this.css,
         };
         const config = {
           method: "POST",
@@ -37,14 +44,31 @@ new Vue({
           },
           body: JSON.stringify(obj),
         };
-        console.log(config);
+        // const response = await fetch(
+        //   "https://color-harmony-api.vercel.app/optimizations/style",
+        //   config
+        // );
         const response = await fetch(
-          "https://color-harmony-api.vercel.app/optimizations/style",
+          "http://localhost:3000/optimizations/style",
           config
         );
-        const data = await response.json();
-        console.log(data);
+        const data = await response.text();
+        this.optimized = true;
+        textBtn.innerHTML = "Otimizar visual";
+        btnOtimizar.classList.remove('disabled');
+        btnOtimizar.disabled = false;
+
+        let styleElement = document.createElement('style');
+        styleElement.id = 'optimizedCss';
+        styleElement.innerHTML = data;
+
+        document.head.appendChild(styleElement);
       });
     },
+    handleReturn() {
+        document.getElementById('optimizedCss').remove();
+        this.optimized = false;
+    }
   },
+
 });

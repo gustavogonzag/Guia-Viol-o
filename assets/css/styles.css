@@ -87,6 +87,10 @@ footer{
     transition: 0.5s;
 }
 
+.disabled{
+    cursor: not-allowed;
+}
+
 /* Estilos para dispositivos menores */
 @media (max-width: 768px) {
     .title h1 {

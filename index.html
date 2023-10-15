@@ -15,7 +15,8 @@
                     <h1>Guia Violão</h1>
                     <p>Primeiros passos para comecar a tocar</p>
                 </div>
-                <button @click="handleClick" class="btn"> <img src="./assets/img/otimizar.png" alt=""><span>Otimizar visual</span></button>
+                <button v-if="!optimized" ref="btnOtimizar" @click="handleClick" class="btn"> <img src="./assets/img/otimizar.png" alt=""><span ref="textBtn">Otimizar visual</span></button>
+                <button v-else @click="handleReturn" class="btn"> <img src="./assets/img/otimizar.png" alt=""><span>Retornar</span></button>
             </nav>
             <div class="container">
                 <div class="contentPost">
