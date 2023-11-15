@@ -1,5 +1,5 @@
 /* Estilos gerais */
-body {
+.padrao {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,50 +7,50 @@ body {
 }
 
 /* Estilos do cabeçalho */
-.title {
+.padrao .title {
     text-align: center;
     background-color: #007BFF;
     color: #fff;
     padding: 20px;
 }
 
-.title h1 {
+.padrao .title h1 {
     font-size: 2.5rem;
     margin: 0;
 }
 
-.title p {
+.padrao .title p {
     font-size: 1.2rem;
     margin: 0;
 }
 
 /* Estilos do conteúdo */
-.container {
+.padrao .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.contentPost {
+.padrao .contentPost {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.imageGuitar {
+.padrao .imageGuitar {
     width: 400px;
     height: auto;
     margin: 10px;
 }
 
-.textContent {
+.padrao .textContent {
     flex: 1;
     padding: 20px;
     text-align: center;
 }
 
-footer{
+.padrao footer{
     text-align: center;
     background-color: #007BFF;
     color: #fff;
@@ -59,19 +59,177 @@ footer{
 
 /* Estilos para dispositivos menores */
 @media (max-width: 768px) {
-    .title h1 {
+    .padrao .title h1 {
         font-size: 2rem;
     }
 
-    .title p {
+    .padrao .title p {
         font-size: 1rem;
     }
 
-    .contentPost {
+    .padrao .contentPost {
         flex-direction: column;
     }
 
-    .textContent {
+    .padrao .textContent {
         padding: 10px;
     }
 }
+
+/* Estilos gerais para daltonismo */
+.daltonismo {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Fundo mais suave */
+}
+
+/* Estilos do cabeçalho */
+.daltonismo .title {
+    text-align: center;
+    background-color: #4f4f4f; /* Cinza escuro para o cabeçalho */
+    color: #fff;
+    padding: 20px;
+}
+
+.daltonismo .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.daltonismo .title p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Estilos do conteúdo */
+.daltonismo .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.daltonismo .contentPost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.daltonismo .imageGuitar {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.daltonismo .textContent {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.daltonismo footer {
+    text-align: center;
+    background-color: #4f4f4f; /* Cinza escuro para o rodapé */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    .daltonismo .title h1 {
+        font-size: 2rem;
+    }
+
+    .daltonismo .title p {
+        font-size: 1rem;
+    }
+
+    .daltonismo .contentPost {
+        flex-direction: column;
+    }
+
+    .daltonismo .textContent {
+        padding: 10px;
+    }
+}
+
+/* Estilos gerais para noturno */
+.noturno {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro para o modo noturno */
+    color: #fff; /* Cor do texto para o modo noturno */
+}
+
+/* Estilos do cabeçalho */
+.noturno .title {
+    text-align: center;
+    background-color: #333; /* Cor de fundo do cabeçalho para o modo noturno */
+    color: #fff;
+    padding: 20px;
+}
+
+.noturno .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.noturno .title p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Estilos do conteúdo */
+.noturno .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.noturno .contentPost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noturno .imageGuitar {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.noturno .textContent {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.noturno footer {
+    text-align: center;
+    background-color: #333; /* Cor de fundo do rodapé para o modo noturno */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    .noturno .title h1 {
+        font-size: 2rem;
+    }
+
+    .noturno .title p {
+        font-size: 1rem;
+    }
+
+    .noturno .contentPost {
+        flex-direction: column;
+    }
+
+    .noturno .textContent {
+        padding: 10px;
+    }
+}
+
