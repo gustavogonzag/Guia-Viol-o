@@ -245,6 +245,88 @@
     }
 }
 
+/* Estilos gerais para noturno e daltonismo combinados */
+.noturnoDaltonico {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro para o modo noturno */
+    color: #fff; /* Cor do texto para o modo noturno */
+
+    /* Adaptações para daltonismo */
+    border: 1px solid #ddd; /* Cor da borda para daltonismo */
+}
+
+/* Estilos do cabeçalho */
+.noturnoDaltonico .title {
+    text-align: center;
+    background-color: #333; /* Cor de fundo do cabeçalho para o modo noturno */
+    color: #fff;
+    padding: 20px;
+}
+
+.noturnoDaltonico .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.noturnoDaltonico .title p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Estilos do conteúdo */
+.noturnoDaltonico .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.noturnoDaltonico .contentPost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noturnoDaltonico .imageGuitar {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.noturnoDaltonico .textContent {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.noturnoDaltonico footer {
+    text-align: center;
+    background-color: #333; /* Cor de fundo do rodapé para o modo noturno */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    .noturnoDaltonico .title h1 {
+        font-size: 2rem;
+    }
+
+    .noturnoDaltonico .title p {
+        font-size: 1rem;
+    }
+
+    .noturnoDaltonico .contentPost {
+        flex-direction: column;
+    }
+
+    .noturnoDaltonico .textContent {
+        padding: 10px;
+    }
+}
+
 .btn{
     padding: 5px 10px;
     background-color: #007BFF;
