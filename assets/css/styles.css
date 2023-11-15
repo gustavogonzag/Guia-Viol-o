@@ -40,6 +40,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .padrao .imageGuitar {
@@ -122,6 +123,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .daltonismo .imageGuitar {
@@ -205,6 +207,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .noturno .imageGuitar {
@@ -287,6 +290,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .noturnoDaltonico .imageGuitar {
