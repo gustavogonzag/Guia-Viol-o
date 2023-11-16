@@ -12,7 +12,7 @@ new Vue({
     btnOtimizar.disabled = true;
     btnOtimizar.classList.add('disabled');
 
-    const token = localStorage.getItem("token");
+    // const token = localStorage.getItem("token");
 
       if (!token) {
         window.location.href = "https://color-harmony.vercel.app/";
