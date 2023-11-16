@@ -12,7 +12,7 @@ new Vue({
     btnOtimizar.disabled = true;
     btnOtimizar.classList.add('disabled');
     //   const token = localStorage.getItem("token");
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluY29sb3JoYXJtb255Iiwic3ViIjoiNjUyYWZkMTMwMDdiZmI2YTVmNWY5ZmZkIiwiaWF0IjoxNjk3MzIxNTMxLCJleHAiOjE2OTc0MDc5MzF9.Tfg83K3w-QEPzxd1ChYMpsj81qHpNAYgQRV1VTg5y7Q";
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluY29sb3JoYXJtb255Iiwic3ViIjoiNjUyYWZkMTMwMDdiZmI2YTVmNWY5ZmZkIiwiaWF0IjoxNjk5MzgyMTc4LCJleHAiOjE2OTk0Njg1Nzh9.3sWNwLvAJPRJlceKtQQuNPWYa7CFcM09Z269Zu7th-g";
 
       if (!token) {
         // window.location.href = "/login";
@@ -20,15 +20,15 @@ new Vue({
       }
 
       this.$nextTick(async () => {
-        var stylesheets = document.styleSheets;
+        let stylesheets = document.styleSheets;
 
-        for (var i = 0; i < stylesheets.length; i++) {
-          var stylesheet = stylesheets[i];
+        for (let i = 0; i < stylesheets.length; i++) {
+          let stylesheet = stylesheets[i];
 
-          var rules = stylesheet.cssRules;
+          let rules = stylesheet.cssRules;
 
-          for (var j = 0; j < rules.length; j++) {
-            var rule = rules[j];
+          for (let j = 0; j < rules.length; j++) {
+            let rule = rules[j];
 
             this.css += rule.cssText;
           }
