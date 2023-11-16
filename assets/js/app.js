@@ -11,18 +11,15 @@ new Vue({
     textBtn.innerHTML = "Otimizando...";
     btnOtimizar.disabled = true;
     btnOtimizar.classList.add('disabled');
-    //   const token = localStorage.getItem("token");
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNoLWZlaXJhIiwic3ViIjoiNjU1NTUzZjIxNjQwMmY2M2ZhNzM2ZDg5IiwiaWF0IjoxNzAwMDk4MTkzLCJleHAiOjE3MDA1MzAxOTN9._SBFtZ76spB7ysQlxoc_-R_fsgRdaxACli5w1VF_VIc";
+
+    const token = localStorage.getItem("token");
 
       if (!token) {
-        // window.location.href = "/login";
-        alert('Você não possui token');
+        
       }
     
       this.$nextTick(async () => {
-
         const url = window.location.href;
-
         const obj = {
           url
         };
@@ -36,7 +33,7 @@ new Vue({
           body: JSON.stringify(obj),
         };
         const response = await fetch(
-          "https://color-harmony-api.vercel.app/api-user/optimizations/mocks",
+          `https://color-harmony-api.vercel.app/api-user/optimizations/mocks`,
           config
         );
         const data = await response.text();
