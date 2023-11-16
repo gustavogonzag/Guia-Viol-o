@@ -13,6 +13,7 @@ new Vue({
     btnOtimizar.classList.add('disabled');
 
     // const token = localStorage.getItem("token");
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJjb2xvcmhhcm1vbnkiLCJzdWIiOiI2NTJhZmQzYjAwN2JmYjZhNWY1ZjlmZmYiLCJpYXQiOjE3MDAxMDU2MjAsImV4cCI6MTcwMDUzNzYyMH0.sFMKP9Fk5eZT95Zc_2juYQOPaxLn2E16_6zyNLZ6vFk";
 
       if (!token) {
         window.location.href = "https://color-harmony.vercel.app/";
