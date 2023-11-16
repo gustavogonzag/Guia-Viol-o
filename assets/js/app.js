@@ -15,7 +15,7 @@ new Vue({
     const token = localStorage.getItem("token");
 
       if (!token) {
-        
+        window.location.href = "https://color-harmony.vercel.app/";
       }
     
       this.$nextTick(async () => {
