@@ -8,7 +8,10 @@ new Vue({
     handleSetToken() {
       const token = document.getElementById("token").value;
       localStorage.setItem("token", token);
-      this.handleClick();
+      document.getElementById('close-modal').click();
+      setTimeout(() => {
+        this.handleClick();
+      },1000)
     },
     handleClick() {
     const token = localStorage.getItem("token");

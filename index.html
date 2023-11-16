@@ -65,27 +65,27 @@
                 <p>Guia Violão - 2023</p>
             </footer>
         </section>
-    </main>
-    <button id="open-modal" hidden type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Abrir modal
-    </button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header text-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Cole seu token</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <input class="form-control" type="text" name="" id="token">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button @click="handleSetToken" type="button" class="btn btn-primary">Salvar</button>
+        <button id="open-modal" hidden type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Abrir modal
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Cole seu token</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-control" type="text" name="" id="token">
+                </div>
+                <div class="modal-footer">
+                  <button id="close-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button @click="handleSetToken" type="button" class="btn btn-primary">Salvar</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+    </main>
 </body>
 <script src="./assets/js/app.js"></script>
 <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
